@@ -1,0 +1,201 @@
+body {
+  height: 100vh;
+  top: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+/*Nav Bar*/
+.topNav {
+  border: 2px solid #e7e7e7;
+  background-color: rgb(243,243,243);
+  overflow: hidden;
+  padding: 0;
+}
+
+.topNav a {
+  display: inline;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.topNav a:hover {
+  background-color: rgb(0,140,186);
+  color: white;
+}
+.topNav a:active {
+  transform: translateY(4px);
+  transition-duration: 0.4s;
+}
+
+/*Course Information section*/
+.courseInfo {
+  margin: 1% 12% 0 12%;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-right: 2%;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 16px;
+  border: 5px solid #bfbfbf;
+}
+.courseInfo .labelGroup {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  display: inline-block;
+  color: #777;
+  font-weight: bold;
+  box-sizing: border-box;
+  zoom: 1;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+.courseInfo #secondLabelGroup {
+  padding-left: 20px;
+}
+.courseInfo #thirdLabelGroup {
+  padding-left: 20px;
+}
+/*Assignment Data form*/
+.assignmentForm {
+  padding-left: 5%;
+  padding-top: 2%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+#assignmentName {
+  width: 432px;
+}
+input[type=text]{
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  height: 1.5em;
+}
+.assignmentForm input[type=text]{
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  height: 1.6em;
+}
+.assignmentForm input[type=date]{
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  height: 1.6em;
+}
+input[type=date]{
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  height: 1.5em;
+}
+.assignmentData label {
+  padding-right: 10px;
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+}
+.rightSide label {
+  padding-right: 10px;
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 130px;
+  text-align: right;
+}
+
+.leftSide label {
+  width: 170px;
+}
+.topside label {
+  width: 170px;
+}
+.assignmentData {
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  color: #777;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin: 0;
+  padding: .35em 0 .75em;
+  border: 0;
+}
+.assignmentDataDivFormatting {
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  color: #777;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin-bottom: .5em;
+}
+.column {
+  float: left;
+  padding-top: 1%;
+}
+.rightSide {
+  width: 50%;
+  margin-bottom: 10%;
+}
+.labelLeft {
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  color: #777;
+  line-height: 1.6;
+  padding-right: 10px;
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+}
+.leftSide {
+  margin-left: 90px;
+}
+
+/*Buttons sections*/
+.buttonsArea {
+  margin: 1% 12% 0 8%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 16px;
+  border: 2px solid #bfbfbf;
+  display: inline-block;
+}
+.ButtonDesign {
+  display: inline;
+  box-sizing: inherit;
+  font: inherit;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  padding: 10px 30px;
+  text-align: center;
+  margin: 10px 0 10px 0 !important;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  border: 2px solid #008CBA;
+  border-radius: 3px;
+  background-color: #008CBA;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.ButtonDesign:active{
+  transform: translateY(4px);
+  transition-duration: 0.4s;
+}
