@@ -1,0 +1,278 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    width: 15%;
+    background-color: #7386D5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset] {
+    width: 15%;
+    background-color: #7386D5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #7386D5;
+}
+input[type=reset]:hover {
+    background-color: #7386D5;
+}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	var count=0;
+function gpa(){
+	if(btnSubmit){
+		var id = document.frm.id.value;
+		var name = document.frm.name.value;
+		var prog = document.frm.prog.value;
+		var subject = document.frm.subject.value;
+		var sem = document.frm.sem.value;
+		var no = document.frm.no.value;
+		var gpa = 0.0;
+		var totalGPA = 0.0;
+		var totalCredit = 0;
+		var status;
+		if(name==""){
+				alert("Please Enter Name!!");
+				document.getElementsByName("name").focus();
+				return false;
+				}	
+		if(sem==""){
+				alert("Please Enter Semester!!");
+				document.getElementsByName("sem").focus();
+				return false;
+				}	
+		for(var i=0;i<no;i++){
+			var code = document.getElementsByName("code")[i].value;
+			var credit = parseInt(document.getElementsByName("credit")[i].value);
+			var grade = document.getElementsByName("grade")[i].value;
+			if(code==""){
+				alert("Please Enter code!!");
+				document.getElementsByName("code").focus();
+				return false;
+				}
+				if(credit==""){
+				alert("Please Enter credit!!");
+				document.getElementsByName("credit").focus();
+				return false;
+				}
+				if(grade==""){
+				alert("Please Enter Name!!");
+				document.getElementsByName("grade").focus();
+				return false;
+				}
+			if(grade=="A+"){
+				gpa += credit*4;
+				totalCredit += credit;
+			}
+			if(grade=="A"){
+				gpa += credit*4;
+				totalCredit += credit;
+			}
+			if(grade=="A-"){
+				gpa += credit*3.67;
+				totalCredit += credit;
+			}
+			if(grade=="B+"){
+				gpa += credit*3.33;
+				totalCredit += credit;
+			}
+			if(grade=="B"){
+				gpa += credit*3;
+				totalCredit += credit;
+			}
+			if(grade=="B-"){
+				gpa += credit*2.67;
+				totalCredit += credit;
+			}
+			if(grade=="C+"){
+				gpa += credit*2.33;
+				totalCredit += credit;
+			}
+			if(grade=="C"){
+				gpa += credit*2;
+				totalCredit += credit;
+			}
+			if(grade=="C-"){
+				gpa += credit*1.67;
+				totalCredit += credit;
+			}
+			if(grade=="D+"){
+				gpa += credit*1.33;
+				totalCredit += credit;
+			}
+			if(grade=="D"){
+				gpa += credit*1;
+				totalCredit += credit;
+			}
+			if(grade=="E"){
+				gpa += credit*0.67;
+				totalCredit += credit;
+			}
+			if(grade=="F"){
+				gpa += credit*0;
+				totalCredit += credit;
+			}
+		}
+		totalGPA = gpa/totalCredit;
+		if(totalGPA>=3.5){
+			status= "Dean List"
+			alert(
+		"ID: " + "\nName: " + name + "\nProgram: " + prog + "\nSemester: " + sem + "\nGPA: " + totalGPA.toFixed(2) + "\nStatus: " + status);
+		}
+		else{
+			alert(
+		"ID: " + "\nName: " + name + "\nProgram: " + prog + "\nSemester: " + sem + "\nGPA: " + totalGPA.toFixed(2));
+		;
+		}
+		
+	}
+}
+</script>
+</head>
+<body>
+	<form name="frm" onsubmit="return false">
+		<script>
+			function onlyNum(){
+				var id = document.frm.id.value;			
+				if(isNaN(id)){
+					//alert("Please Enter Number Only!");
+					document.frm.id.value="";
+					document.getElementsByName("id").focus();
+					return false;
+				}
+			}
+		</script>
+		<table>
+		<tr>
+		<td>Name <td><input type="text" name="name" onkeyup="onlyNum()">
+		</tr>
+		<tr>
+		<td>Program <td>Diploma<input type="radio" name="prog" value="Diploma">
+					Degree<input type="radio" name="prog" value="Degree" checked> 
+		</tr>
+		<tr>
+		<td>Number of subjects <td><input type="text" maxlength="1" size=1 name="subject" id="subject" onkeydown="delTable()" onkeyup="generate()">
+		</tr>
+		<tr>
+		<td>Semester <td><select name="sem">
+					<option value="">Select Semester
+					<option value="1">1
+					<option value="2">2
+					<option value="3">3
+					<option value="4">4
+					<option value="5">5
+					<option value="6">6
+				</select>
+		</tr>
+		</table>
+				<table id=genTable align=center>
+
+				
+		<script>
+			function generate(){
+				var x = document.getElementById("subject").value;
+				if(count==0){
+					if(isNaN(x)){
+						alert("Please Enter Number Only!");
+						document.frm.subject.value="";
+						document.getElementsByName("subject").focus();
+						return false;
+						}
+					else{
+						if(x==""){
+							document.getElementsByName("subject").focus();
+							}
+					else{
+						document.getElementById("genTable").innerHTML+=
+						"<tr align=center><td colspan=4><h1>Calculate GPA</h1></tr><tr align=center><td><b>No.<td><b>Code<td><b>Credit<td><b>Grade</tr>"
+						;
+						for(var i=0;i<x;i++){
+						document.getElementById("genTable").innerHTML+=
+						"<tr><td>"+(i+1)+"<td><input type='text' name='code'><td><input type='text' maxlength=1 size=1 name='credit'><td><select name='grade'>"
+					+"<option value=''>Select Grade"
+					+"<option value='A+'>A+"
+					+"<option value='A'>A"
+					+"<option value='A-'>A-"
+					+"<option value='B+'>B+"
+					+"<option value='B'>B"
+					+"<option value='B-'>B-"
+					+"<option value='C+'>C+"
+					+"<option value='C'>C"
+					+"<option value='C-'>C-"
+					+"<option value='D+'>D+"
+					+"<option value='D'>D"
+					+"<option value='E'>E"
+					+"<option value='F'>F"
+				+"</select></tr>";						}
+						document.getElementById("genTable").innerHTML+="<input type='hidden' name='no' value="+x+">";
+					}
+					}
+				}
+				else{
+					var genTable = document.getElementById("genTable");
+					genTable.innerHTML="";
+					count=0;
+					document.getElementById("genTable").innerHTML+=
+						"<tr align=center><td colspan=4><h1>Calculate GPA</h1></tr><tr align=center><td><b>No.<td><b>Code<td><b>Credit<td><b>Grade</tr>"
+						;
+					for(var i=0;i<x;i++){
+						document.getElementById("genTable").innerHTML+=
+						"<tr><td>"+(i+1)+"<td><input type='text' name='code'><td><input type='text' maxlength=1 size=1 name='credit'><td><select name='grade'>"
+					+"<option value=''>Select Grade"
+					+"<option value='A+'>A+"
+					+"<option value='A'>A"
+					+"<option value='A-'>A-"
+					+"<option value='B+'>B+"
+					+"<option value='B'>B"
+					+"<option value='B-'>B-"
+					+"<option value='C+'>C+"
+					+"<option value='C'>C"
+					+"<option value='C-'>C-"
+					+"<option value='D+'>D+"
+					+"<option value='D'>D"
+					+"<option value='E'>E"
+					+"<option value='F'>F"
+				+"</select></tr>";						}
+						document.getElementById("genTable").innerHTML+="<input type='hidden' name='no' value="+x+">"; 
+				}
+				count++;
+			}
+			function delTable(){
+				var x = document.getElementById("subject").value;
+				if(x==""){
+					var genTable = document.getElementById("genTable");
+					genTable.innerHTML="";
+				}
+			}
+		</script>
+		</table>
+		<p id="displayResult"></p>
+		<button id="btnSubmit" onClick="gpa()">Calculate GPA</button>
+		<input type="reset">
+	</form>
+</body>
+
+</html>
