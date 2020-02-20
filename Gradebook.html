@@ -1,0 +1,286 @@
+<!-- 
+  Author: Nick Wu
+  Last modified: 2/20/20
+  Last modified by: Sam Lohbeck
+ -->
+
+<!DOCtYPE HTML>
+
+<html>
+
+	<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <a class="navbar-brand" href="#">龍</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Assignment</a>
+      </li>
+	  <li class="nav-item active">
+		<a class="nav-link" href="#">Attendance</a>
+	  </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Setting</a>
+      </li>
+      <li class="nav-item dropdown active float-right" id="Userli">
+        <a class="nav-link dropdown-toggle" href="#" id="User" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Anthony Willson
+        </a>
+        <div class="dropdown-menu" aria-labelledby="User">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Inbox</a>
+          <a class="dropdown-item" href="#">Log out</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+		<style>
+			#navbarNavDropdown{
+				display: flexbox;
+				}
+			#Userli {
+				display: flexbox;
+				margin-left: 1050px;
+				
+			}
+			.border{
+				border: 2px;
+				padding-left: 1.5px;
+				padding-right: 1.5px;
+				padding-bottom: 3px;
+				padding-top: 3px;
+			}
+			
+			#GradeCenter{
+				text-align: center;
+				}
+				
+			#Firstrow{
+				padding-bottom:3px;
+				font-size:20px;
+			}
+			
+			.Score{
+				border: 1px solid;
+				border-color: #bfbfbf;
+				border-radius: 8px;
+				}
+				
+			.info{
+				font-size:20px;
+				}
+			
+			.input-sm{
+				font-size:15px;
+				}
+				
+			a#User {
+				float: right;
+				}
+			
+			#Firstrow{
+					background-color: #E2FFD9;
+					}
+			#row2{
+					background-color: #E0F3F3;
+					}
+			#row3{
+					background-color: #E2FFD9;
+					}
+			#row4{
+					background-color: #E0F3F3;
+					}
+			#row5{
+					background-color: #E2FFD9;
+					}
+			#row6{
+					background-color: #E0F3F3;
+					}
+			#row7{
+					background-color: #E2FFD9;
+					}		
+			#row8{
+					background-color: #E0F3F3;
+					}
+			#row9{
+					background-color: #E2FFD9;
+					}		
+			#row10{
+					background-color: #E0F3F3;
+					}
+					
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="container" id="power">
+			<div class=" col-sm-4 btn-group">
+				
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				19/FA CIS-131-401, CIS-131-CC401
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">19/FA CIS-151-401, CIS-151-CC401, CIS-151-FOL41</a></li>
+					<li><a href="#">19/FA CIS-250-401, CIS-250-CC401</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-5"></div>
+			<div class="col-sm-2">
+				<a href="#" class="btn btn-primary" role="button">Next Semester</a>
+			</div>
+			<div class="col-sm-1">
+				<a href="#" class="btn btn-primary float-right" role="button">Last Semester</a>
+			</div>
+			
+		</div>
+		
+		<div class="row" id="Firstrow">
+			<div id="GradeCenter" class="col-sm-2"><b>Students</b></div>
+			<div id="Assignment" class="col-sm-1"><b>Assignment</b></div>
+			<div id="Assignment" class="col-sm-1"><b>Assignment</b></div>
+			<div id="Assignment" class="col-sm-1"><b>Assignment</b></div>
+			<div id="Assignment" class="col-sm-1"><b>Assignment</b></div>
+			<div id="Assignment" class="col-sm-1"><b>Assignment</b></div>
+			<div id="Assignment" class="col-sm-1"><b>Assignment</b></div>
+			<div id="GradeCenter" class="col-sm-4 "><b>Grade</b></div>
+		</div>
+		
+		<div id="row2" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border">Nicholas Wu</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row3" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border">Samule Loback</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row4" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border">Eric Smith</div>
+			<div class="col-sm-1 border">
+				<input type="number" min="0" max="100000" class="Score form-control input-sm">
+			</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row5" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border"></div>
+			<div class="col-sm-1 border">
+				<input type="number" min="0" max="100000" class="Score form-control input-sm">
+			</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row6" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border"></div>
+			<div class="col-sm-1 border">
+				<input type="number" min="0" max="100000" class="Score form-control input-sm">
+			</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row7" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border"></div>
+			<div class="col-sm-1 border">
+				<input type="number" min="0" max="100000" class="Score form-control input-sm">
+			</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row8" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border"></div>
+			<div class="col-sm-1 border">
+				<input type="number" min="0" max="100000" class="Score form-control input-sm">
+			</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row9" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border"></div>
+			<div class="col-sm-1 border">
+				<input type="number" min="0" max="100000" class="Score form-control input-sm">
+			</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+		<div id="row10" class="row info">
+			<div id="GradeCenter" class="col-sm-2 border"></div>
+			<div class="col-sm-1 border">
+				<input type="number" min="0" max="100000" class="Score form-control input-sm">
+			</div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div class="col-sm-1 border"><input type="number" min="0" max="100000" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+			<div id="GradeCenter" class="col-sm-2 border"><input type="text" class="Score form-control input-sm"></div>
+		</div>
+		
+	</body>
+	
+</html>
+			
