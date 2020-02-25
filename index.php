@@ -16,6 +16,6 @@
      <title>Home</title>
  </head>
  <body>
-     
+     <?php echo("Blah") ?>
  </body>
  </html>
