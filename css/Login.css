@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  width: 65%;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width: 35%;
+}
+
+/* Control top side */
+.top {
+  top: 0;
+  height: 30%;
+}
+
+/* Add img to left side */
+div#Splash {
+  background-image: url("img/OTC_Splash.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Logo area */
+img#kettle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+fieldset {
+  border: none;
+  padding-left: 100px;
+}
+
+button#subButton {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 5%;
+  display: block;
+}
+div#subButtonDiv {
+  padding: 8% 10%;
+}
+
+label#passwordLabel {
+  padding-right: 48px;
+}
+
+label#emailLabel {
+  padding-right: 15px;
+}
+div#emailGroup {
+  padding-bottom: 10px;
+}
