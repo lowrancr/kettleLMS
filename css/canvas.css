@@ -6,6 +6,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    margin: 0;
+    padding: 20px 0 0 0;
 }
 
 p {
@@ -13,7 +15,10 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    text-align: center;
+    color: #444;
+    margin: 20px;
+    padding: 150px 0;
 }
 
 a, a:hover, a:focus {
@@ -50,21 +55,41 @@ a, a:hover, a:focus {
 ----------------------------------------------------- */
 
 .wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-    perspective: 1500px;
+    width: 25%;
+    height: 100vh;
+    perspective: 1000px;
+    padding: 0px 0px 0px 0px;
 }
-
+.wrapper-right {
+    width: 25%;
+    height: 100vh;
+    float: right;
+    padding: 0px 0px 0px 0px;
+}
 
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    height: ;
+    height: 100vh;
+    position: absolute;
+    background: rgb(40, 115, 176);
+    color: #fff;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+}
+
+#sidebar-right {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
     background: rgb(40, 115, 176);
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-    transform-origin: bottom left;
+    float: right;
+    top: 63px;
+    right: 0;
+    position: absolute;
+    text-align: center;
 }
 
 #sidebar.active {
@@ -72,13 +97,14 @@ a, a:hover, a:focus {
     transform: rotateY(100deg);
 }
 
-#sidebar .sidebar-header {
-    padding: 20px;
+#sidebar .sidebar-header .sidebar-header-right {
+    padding-top: 80px;
+    margin-top: 50px;
     background: rgb(40, 115, 176);
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 0px 0;
     border-bottom: 1px solid rgb(40, 115, 176);
 }
 
