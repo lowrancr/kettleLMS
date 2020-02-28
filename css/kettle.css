@@ -28,7 +28,7 @@ a, a:hover, a:focus {
 }
 
 .navbar {
-    padding: 0px 3px;;
+    padding: 0px;
     background:  rgb(40, 115, 176);
     border: none;
     border-radius: 0;
@@ -36,12 +36,11 @@ a, a:hover, a:focus {
 }
 
 .navbar-btn {
-    height: 50vh;
+    height: 100vh;
     box-shadow: none;
     outline: none !important;
     border: none;
-    color: rgb(28, 117, 190);
-    margin-left: 30px
+    color: rgb(40, 115, 176);
 }
 
 .line {
@@ -51,21 +50,9 @@ a, a:hover, a:focus {
     margin: 40px 0;
 }
 
-image-wrapper {
-    height: 50px;
-    width: 50px;
-    background-image: url("img/c.PNG");
-}
-
-image-wrapper2 {
-    height: 50px;
-    width: 50px;
-    background-image: url("img/python.JPG");
-}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-
 
 .wrapper {
     width: 25%;
@@ -105,10 +92,6 @@ image-wrapper2 {
     text-align: center;
 }
 
-#sidebar-right h3 {
-    font-size: 22px;
-}
-
 #sidebar.active {
     margin-left: -250px;
     transform: rotateY(100deg);
@@ -127,12 +110,12 @@ image-wrapper2 {
 
 #sidebar ul p {
     color: #fff;
-    padding: 15px;
+    padding: 10px;
 }
 
 #sidebar ul li a {
-    padding: 15px;
-    font-size: 1.2em;
+    padding: 10px;
+    font-size: 1.1em;
     display: block;
 }
 #sidebar ul li a:hover {
