@@ -5,13 +5,7 @@ $root = realpath('C:\xampp\htdocs\kettleLMS');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php 
-    $pageName = "Home"; 
-    $var2 = "";
-    $var3 = "";
-    $var4 = "";
-        
-    require($root.'/includes/head.php'); ?>
+    <?PHP require($root.'/includes/head.php'); ?>
 </head>
 <body>
 
@@ -21,7 +15,6 @@ $root = realpath('C:\xampp\htdocs\kettleLMS');
 
         <!-- Page Content  -->
         <div id="content">
-
         </div>
     </div>
 
