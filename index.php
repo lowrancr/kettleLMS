@@ -27,7 +27,7 @@
 	</div>
     <div class="container">
         <h2>Kettle Login</h2>
-        <form action="canvas.html">
+        <form action="home.php">
           <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
