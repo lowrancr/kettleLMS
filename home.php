@@ -16,6 +16,22 @@
     <title>Home</title>
 </head>
 <body>
-    
+    <div class="gridContainer">
+        <header>
+        <!-- Header -->
+        </header>
+        <nav>
+        <!-- Navigation -->
+        </nav>
+        <main>
+        <!-- Main content -->
+        </main>
+        <section>
+        <!-- Sidebar -->
+        </section>
+        <footer>
+        <!-- Footer -->
+        </footer>
+    </div>
 </body>
 </html>
