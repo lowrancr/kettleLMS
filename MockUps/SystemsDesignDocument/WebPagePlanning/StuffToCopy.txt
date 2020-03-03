@@ -1,0 +1,23 @@
+<Grid>
+    <Button x:Name="new_assignment_button" Content="New Assignment" Margin="330,150,318.333,0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="25" Width="145" RenderTransformOrigin="0.5,0.5"/>
+    <Button x:Name="archive_assignment_button" Content="Archive Assignment" Margin="330,205,318.333,0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="25" Width="145" RenderTransformOrigin="0.5,0.5"/>
+    <Menu x:Name="nav_bar" Height="30" VerticalAlignment="Top" Margin="0,0,0.333,0">
+      <MenuItem Header="Home" Height="30"></MenuItem>
+      <MenuItem Header="Grid" Height="30"></MenuItem>
+      <MenuItem Header="Seating" Height="30"></MenuItem>
+      <MenuItem Header="Reports" Height="30"></MenuItem>
+      <MenuItem Header="Settings" Height="30"></MenuItem>
+    </Menu>
+</Grid>
+
+<Grid Margin="0,0,0.333,0">
+        <Image Source="OTC_Splash.png" Stretch="Fill" Margin="0,0,387,0"/>
+        <Label x:Name="emailLabel" Content="Email:" Margin="0,245,243,319" HorizontalAlignment="Right" Width="84" FontFamily="Segoe UI Semibold"/>
+        <Label x:Name="passwordLabel" Content="Password:" Margin="0,295,243,269" HorizontalAlignment="Right" Width="84" FontFamily="Segoe UI Semibold"/>
+        <TextBox x:Name="emailInput" Margin="0,245,42,0" TextWrapping="Wrap" HorizontalAlignment="Right" Width="195" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="passwordInput" HorizontalAlignment="Right" Margin="0,295,41,0" TextWrapping="Wrap" Width="195" Height="20" VerticalAlignment="Top"/>
+        <Label x:Name="instructionLabel" Content="Enter your OTC Email and Password" Height="25" Margin="0,190,42,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="230" FontWeight="Bold"/>
+        <Button x:Name="submitButton" Content="Submit" Height="30" Margin="0,360,127,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="95"/>
+        <Image Margin="0,26,103,0" Source="kettlePng.png" Stretch="Fill" RenderTransformOrigin="0.294,-3.51" Height="129" VerticalAlignment="Top" HorizontalAlignment="Right" Width="154"/>
+        <Label x:Name="copyrightLabel" Content="Copyright OTC" Height="34" Margin="0,535,106,0" VerticalAlignment="Center" HorizontalAlignment="Right" Width="116"/>
+</Grid>
