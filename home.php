@@ -22,29 +22,23 @@
     <div class="gridContainer">
         <header>
         <!-- Header -->
-        Header
-		<?php include "head.php" ?>
-		<?php include "navBar.php" ?>
+		<?php include("includes/head.php") ?>
+		<?php include("includes/navBar.php") ?>
         </header>
         <nav>
         <!-- Navigation -->
-        Navigation
-		<?php include "sidebar.php" ?>
+		<?php include("includes/sidebar.php") ?>
         </nav>
         <main>
         <!-- Main content -->
-        Main
-		<?php include "" ?>
         </main>
         <section>
         <!-- Sidebar -->
-        Section
-		<?php include "rightSidebar.php" ?>
+		<?php include("includes/rightSidebar.php") ?>
         </section>
         <footer>
         <!-- Footer -->
-        footer
-		<?php include "footer.php" ?>
+		<?php include("includes/footer.php") ?>
         </footer>
     </div> 
 </body>
