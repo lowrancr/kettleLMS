@@ -1,5 +1,54 @@
 /*
     Author: Kettle Team
-    Last modified: 3/03/20
+    Last modified: 3/05/20
     Last modified by: Sam Lohbeck
 */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body CSS */
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Grid setup  */
+.gridContainer {
+    /* Layout Properties */
+    display: grid;
+    grid: 110px 970px 56px / 252px 1363px 305px;
+    grid: 10.1;
+    grid-template-areas: 
+    'header header header'
+    'nav main section'
+    'nav footer section';
+}
+
+/* Header CSS */
+header {
+    background-color: #F8F9FA;
+    grid-area: header;
+}
+/* Nav CSS */
+nav {
+    background-color: #2873B0;
+    grid-area: nav;
+}
+/* Main CSS */
+main {
+    grid-area: main;
+}
+/* Courses Section CSS */
+section {
+    background-color: #2873B0;
+    grid-area: section;
+}
+/* Footer CSS */
+footer {
+    background-color: #F8F9FA;
+    grid-area: footer;
+}
