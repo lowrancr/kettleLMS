@@ -1,6 +1,6 @@
 /*
     Author: Kettle Team
-    Last modified: 3/05/20
+    Last modified: 3/06/20
     Last modified by: Sam Lohbeck
 */
 
@@ -14,9 +14,8 @@
 .gridContainer {
     /* Layout Properties */
     display: grid;
-    /* grid: 55px 970px 56px / 252px 1363px 305px; */
+    grid: 55px 970px 56px / 252px 1363px 305px;
     /* grid: 4.6em 80.8em 4.7em / 21em 113.6em 25.42em; */
-    grid: 1fr 1fr 1fr / 1fr 1fr 1fr; 
 
     grid-template-areas: 
     'header header header'
@@ -32,7 +31,8 @@ header {
 }
 /* Nav CSS */
 nav {
-    background-color: #2873B0;
+    /* background-color: #2873B0; */
+    background-color: brown;
     grid-area: nav;
 }
 /* Main CSS */
@@ -41,7 +41,8 @@ main {
 }
 /* Courses Section CSS */
 section {
-    background-color: #2873B0;
+    /* background-color: #2873B0; */
+    background-color: #F8F9FA;
     grid-area: section;
 }
 /* Footer CSS */

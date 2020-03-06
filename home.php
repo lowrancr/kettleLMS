@@ -5,9 +5,7 @@
  -->
 
 
- <?php 
-   $SERVER["DOCUMENT_ROOT"] = "C:\xampp\htdocs\kettleLMS"
-?>
+
 
 
 <!DOCTYPE html>
@@ -22,23 +20,21 @@
     <div class="gridContainer">
         <header>
         <!-- Header -->
-		<?php /*include("includes/head.php")*/ ?>
-		<?php /*include("includes/navBar.php")*/ ?>
+		Hoopla
         </header>
         <nav>
         <!-- Navigation -->
-		<?php /*include("includes/sidebar.php")*/ ?>
+        Nav
         </nav>
         <main>
         <!-- Main content -->
+        Main
         </main>
         <section>
         <!-- Sidebar -->
-		<?php /*include("includes/rightSidebar.php")*/ ?>
         </section>
         <footer>
         <!-- Footer -->
-		<?php /*include("includes/footer.php")*/ ?>
         </footer>
     </div> 
 </body>
