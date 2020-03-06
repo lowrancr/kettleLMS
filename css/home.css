@@ -4,32 +4,25 @@
     Last modified by: Sam Lohbeck
 */
 
-:root {
-    --myWidth: 100%;
-}
-
 /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Body CSS */
-body {
-    height: auto;
-    width: auto;
-}
-
 /* Grid setup  */
 .gridContainer {
     /* Layout Properties */
     display: grid;
-    grid: 55px  970px 56px / 252px 1363px 305px;
+    /* grid: 55px 970px 56px / 252px 1363px 305px; */
+    /* grid: 4.6em 80.8em 4.7em / 21em 113.6em 25.42em; */
+    grid: 1fr 1fr 1fr / 1fr 1fr 1fr; 
 
     grid-template-areas: 
     'header header header'
     'nav main section'
     'nav footer section';
+
 }
 
 /* Header CSS */
