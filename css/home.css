@@ -14,8 +14,8 @@
 .gridContainer {
     /* Layout Properties */
     display: grid;
-    grid: 55px 970px 56px / 252px 1363px 305px;
-    /* grid: 4.6em 80.8em 4.7em / 21em 113.6em 25.42em; */
+    /* grid: 55px 970px 56px / 252px 1363px 305px; */
+    grid: 4.6em 80.8em 4.7em / 21em 113.6em 25.42em;
 
     grid-template-areas: 
     'header header header'
@@ -31,8 +31,7 @@ header {
 }
 /* Nav CSS */
 nav {
-    /* background-color: #2873B0; */
-    background-color: brown;
+    background-color: #2873B0;
     grid-area: nav;
 }
 /* Main CSS */
@@ -41,8 +40,7 @@ main {
 }
 /* Courses Section CSS */
 section {
-    /* background-color: #2873B0; */
-    background-color: #F8F9FA;
+    background-color: #2873B0;
     grid-area: section;
 }
 /* Footer CSS */
