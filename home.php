@@ -4,6 +4,7 @@
     Last modified by: Hunter Holderfield
  -->
 
+ <?php  $SERVER["DOCUMENT_ROOT"] = "C:\xampp\htdocs\kettleLMS";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,21 +18,23 @@
     <div class="gridContainer">
         <header>
         <!-- Header -->
-		Hoopla
+        <?php include("includes/head.php"); ?>
+        <?php include("includes/navBar.php"); ?>
         </header>
         <nav>
         <!-- Navigation -->
-        Nav
+        <?php include("includes/sidebar.php"); ?>
         </nav>
         <main>
         <!-- Main content -->
-        Main
         </main>
         <section>
         <!-- Sidebar -->
+        <?php include("includes/rightSidebar.php"); ?>
         </section>
         <footer>
         <!-- Footer -->
+        <?php include("includes/footer.php"); ?>
         </footer>
     </div> 
 </body>
