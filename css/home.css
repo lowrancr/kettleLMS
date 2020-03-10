@@ -10,6 +10,12 @@
     padding: 0;
 }
 
+/* CSS Variables  */
+:root {
+    --primary-color: #2873B0;
+    --secondary-color: #F8F9FA;
+}
+
 /* Grid setup  */
 .gridContainer {
     height: 100vh;
@@ -26,12 +32,12 @@
 
 /* Header CSS */
 header {
-    background-color: #F8F9FA;
+    background-color: var(--secondary-color);
     grid-area: header;
 }
 /* Nav CSS */
 nav {
-    background-color: #2873B0;
+    background-color: var(--primary-color);
     grid-area: nav;
 }
 /* Main CSS */
@@ -40,11 +46,11 @@ main {
 }
 /* Courses Section CSS */
 section {
-    background-color: #2873B0;
+    background-color: var(--primary-color);
     grid-area: section;
 }
 /* Footer CSS */
 footer {
-    background-color: #F8F9FA;
+    background-color: var(--secondary-color);
     grid-area: footer;
 }
