@@ -1,6 +1,6 @@
 h2 {
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 34px;
     text-align: center;
     text-decoration: none;
 
@@ -8,31 +8,41 @@ h2 {
 
 h3 {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-size: 22px;
     text-align: center;
     text-decoration: none;
 }
 
 .first-course {
     background-image: url("../img/c.png");
-    height: 200px;
+    height: 211px;
+
 
 
 }
 
 .second-course {
     background-image: url("../img/python.jpg");
-    height: 200px;
+    height: 211px;
+
 
 }
 
 .third-course {
     background-image: url("../img/sql.jpg");
-    height: 200px;
+    height: 211px;
+
 
 }
 
 .fourth-course {
     background-image: url("../img/webdev.jpg");
-    height: 200px;
+    height: 211px; 
 }

@@ -1,6 +1,7 @@
+<link rel="stylesheet" href="css/sidebar.css">
    <nav id="sidebar">
             <div class="sidebar-header">
-                <h3><strong>Kettle</strong></h3>
+                <h2><strong>Kettle</strong></h2>
             </div>
 
             <ul class="list-unstyled components">
