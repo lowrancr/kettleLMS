@@ -40,8 +40,6 @@
             <label><input type="checkbox" name="remember"> Remember me</label>
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-          <a class="dropdown-item" href="calculator.html" target=_blank>Calculator</a>
       </div>
 </body>
 </html>
